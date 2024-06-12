@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+//import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { loginWithGoogle } from '../lib/firebase/auth';
 import styles from '../styles/Home.module.css';
 
@@ -10,7 +10,7 @@ export default function Home() {
   const auth = getAuth();
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
+   // const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
         router.push('/dashboard');
