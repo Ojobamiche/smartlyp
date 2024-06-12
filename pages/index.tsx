@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { loginWithGoogle } from '../lib/firebase/auth';
-import styles from '../styles/Home.module.css';
+import styles from './styles/Home.module.css';
 
 export default function Home() {
   const [user, setUser] = useState(null);
