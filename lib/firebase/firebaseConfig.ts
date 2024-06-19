@@ -1,24 +1,20 @@
-// /lib/firebase/auth.ts
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-import * as firebase from 'firebase/app';
-// ... rest of your code
-import 'firebase/auth';
-import 'firebase/firestore';
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    ,
+    auconst mySecret = process.env['18634']const mySecret = process.env['18634']thDomain: "playground-5011e.firebaseapp.com",
+    databaseURL: "https://playground-5011e-default-rtdb.firebaseio.com",
+    projectId: "playground-5011e",
+    storageBucket: "playground-5011e.appspot.com",
+    messagingSenderId: "865280258926",
+    appId: "1:865280258926:web:41ff691eb1e88467f9c77f"
+  };
 
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
-};
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-
-const auth = firebase.auth();
-const firestore = firebase.firestore();
-
-export { auth, firestore };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
