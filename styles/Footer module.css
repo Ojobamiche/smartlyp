@@ -1,0 +1,62 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socialMediaLinks a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.contactDetails p {
+  margin-bottom: 5px;
+}
+
+.feedbackForm input,
+.feedbackForm textarea,
+.feedbackForm button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.feedbackForm button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  
+  .footerContent {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    gap:20px; /* Add space between stacked elements */
+    
+    .socialMediaLinks,
+    .contactDetails,
+    .feedbackForm {
+      width:auto; /* Allow elements to fill available width */
+      text-align:center; /* Center text for mobile view */
+    }
+    
+    .socialMediaLinks a,
+    .contactDetails p,
+    .feedbackForm input,
+    .feedbackForm textarea,
+    .feedbackForm button {
+      margin-bottom:none; /* Remove space between stacked elements */
+      padding:10px; /* Adjust padding for mobile */
+    }
+  }

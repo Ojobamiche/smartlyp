@@ -1,0 +1,31 @@
+import styles from '../styles/Login.module.css';
+
+const Login = () => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.formContainer}>
+        <img src="/login-illustration.png" alt="Login Illustration" className={styles.illustration} />
+        <h1>Welcome</h1>
+        <form className={styles.form}>
+          <div className={styles.inputGroup}>
+            <span className={styles.icon}><i className="fas fa-user"></i></span>
+            <input type="text" placeholder="Username" className={styles.input} />
+          </div>
+          <div className={styles.inputGroup}>
+            <span className={styles.icon}><i className="fas fa-envelope"></i></span>
+            <input type="password" placeholder="Email" className={styles.input} />
+          </div>
+          <div className={styles.inputGroup}>
+            <span className={styles.icon}><i className="fas fa-lock"></i></span>
+            <input type="password" placeholder="Password" className={styles.input} />
+          </div>
+          <button type="submit" className={styles.button}>Log in</button>
+        </form>
+        <a href="#" className={styles.forgotPassword}>Forgot Password</a>
+        <a href="#" className={styles.signup}>Don't Have an Account?</a>
+      </div>
+    </div>
+  );
+};
+
+export default Login;

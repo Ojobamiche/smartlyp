@@ -1,0 +1,67 @@
+/* Pricing.module.css */
+.pricingContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.pricingCard {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.pricingCard h2 {
+  margin-bottom: 10px;
+}
+
+.pricingCard p {
+  margin-bottom: 20px;
+}
+
+.pricingCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricingCard ul li {
+  margin: 10px 0;
+}
+
+.pricingCard button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .pricingContainer {
+    flex-direction: column; /* Stack pricing cards vertically */
+    align-items: center; /* Center pricing cards horizontally */
+    padding:10px; /* Adjust padding for mobile */
+    gap:20px; /* Add space between stacked cards */
+
+    .pricingCard {
+      width:auto; /* Allow pricing card to fill available width */
+      margin-bottom:none; /* Remove space between stacked cards */
+      box-shadow:none; /* Optional: remove shadow on mobile for flat design */
+    }
+
+    .pricingCard h2,
+    .pricingCard p,
+    .pricingCard ul li {
+      margin-bottom:15px; /* Adjust margins for mobile */
+    }
+
+    .pricingCard button {
+      padding:10px; /* Adjust button padding for mobile */
+    }
+  }
